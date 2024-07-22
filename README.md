@@ -23,12 +23,21 @@ Location Awareness: Provide users with their current location information.
 This application is built using the following technologies and libraries:
 
 Kotlin: Primary programming language for Android development.
+
 Android Jetpack:
+
 ViewModel
+
 LiveData
+
 Room Database
+
 Navigation Component
+
 Coroutines: For managing background tasks and asynchronous operations.
+
 ML Kit: For text recognition in images.
+
 Glide: For efficient image loading and caching.
+
 ViewBinding: For efficient view access.
