@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/allItemsFragments">
+
+    <fragment
+        android:id="@+id/allItemsFragments"
+        android:name="com.example.architectureproject.ui.all_characters.AllItemsFragments"
+        android:label="all_items_layout"
+        tools:layout="@layout/all_items_layout">
+        <action
+            android:id="@+id/action_allItemsFragments_to_addItemFragment"
+            app:destination="@id/addItemFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_allItemsFragments_to_detailItemFragment"
+            app:destination="@id/detailItemFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_allItemsFragments_to_editTripFragment"
+            app:destination="@id/editTripFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.example.architectureproject.ui.add_character.AddItemFragment"
+        android:label="add_item_layout"
+        tools:layout="@layout/add_item_layout">
+        <action
+            android:id="@+id/action_addItemFragment_to_allItemsFragments"
+            app:destination="@id/allItemsFragments"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            app:popUpTo="@id/allItemsFragments"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailItemFragment"
+        android:name="com.example.architectureproject.ui.single_character.DetailItemFragment"
+        android:label="detail_item_layout"
+        tools:layout="@layout/detail_item_layout" >
+        <action
+            android:id="@+id/action_detailItemFragment_to_allItemsFragments"
+            app:destination="@id/allItemsFragments"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/allItemsFragments"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_detailItemFragment_to_objectDetectionFragment"
+            app:destination="@id/objectDetectionFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTripFragment"
+        android:name="com.example.architectureproject.ui.edit_character.EditTripFragment"
+        android:label="edit_trip_layout"
+        tools:layout="@layout/edit_trip_layout" >
+        <action
+            android:id="@+id/action_editTripFragment_to_allItemsFragments"
+            app:destination="@id/allItemsFragments"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/allItemsFragments"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/objectDetectionFragment"
+        android:name="com.example.architectureproject.ui.image_labeling.ImageLabelingFragment"
+        android:label="photo_object_detection_layout"
+        tools:layout="@layout/image_labeling_layout" >
+        <action
+            android:id="@+id/action_objectDetectionFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/detailItemFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

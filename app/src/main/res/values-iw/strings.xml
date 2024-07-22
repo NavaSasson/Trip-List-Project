@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ArchitectureProject</string>
+    <string name="new_trip">טיול חדש</string>
+    <string name="enter_trip_title">"הכנס כותרת "</string>
+    <string name="enter_trip_description">הכנס תיאור</string>
+    <string name="add_image">הוספת תמונה</string>
+    <string name="no_location">לא נבחר מיקום</string>
+    <string name="location">" מיקום"</string>
+    <string name="add_music">הוספת מוזיקה</string>
+    <string name="no_music">לא נבחרה מוזיקה</string>
+    <string name="add_to_trips_list">הוספה לרשימת הטיולים</string>
+    <string name="save_location">שמור מיקום</string>
+    <string name="confirm_delete">אישור מחיקה</string>
+    <string name="sure_you_want_to_delete">האם אתה בטוח כי ברצונך למחוק טיול זה?</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+    <string name="enter_trip_location">הכנס מיקום</string>
+    <string name="play_music">הפעל מוזיקה</string>
+    <string name="edit_trip">עריכת טיול</string>
+    <string name="save_changes">שמור שינויים</string>
+    <string name="add_location">הוספת מיקום</string>
+    <string name="change_image">שנה תמונה</string>
+    <string name="change_location">שנה מיקום</string>
+    <string name="no_trip_title">לא נבחרה כותרת</string>
+    <string name="no_trip_description">אין תיאור</string>
+    <string name="back_btn">חזור</string>
+    <string name="image_labeling">"זיהוי עצמים "</string>
+    <string name="loading">טוען...</string>
+    <string name="image_labeling_failed">זיהוי עצמים נכשל</string>
+    <string name="no_labels_detected">לא נמצאו עצמים בתמונה</string>
+    <string name="confidence">, דיוק:</string>
+    <string name="exit_without_adding_trip">האם אתה בטוח כי ברצונך לצאת מבלי להוסיף את הטיול?</string>
+    <string name="exit_confirmation">אישור יציאה</string>
+    <string name="trip_list">רשימת טיולים</string>
+    <string name="set_location_as_current_location">הגדר את המיקום כמיקום הנוכחי</string>
+    <string name="no_photo">לא נבחרה תמונה</string>
+    <string name="without_saving_your_changes">האם אתה בטוח כי ברצונך לצאת מבלי לשמור את השינויים?</string>
+    <string name="no_description">אין תיאור</string>
+    <string name="you_must_enter_a_title">חובה לתת כותרת לטיול</string>
+    <string name="from_where_upload_the_image">אנא בחר מהיכן תרצה להעלות את התמונה</string>
+    <string name="camera">מצלמה</string>
+    <string name="gallery">גלריה</string>
+</resources>

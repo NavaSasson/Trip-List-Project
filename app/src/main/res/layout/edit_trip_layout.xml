@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.edit_character.EditTripFragment"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/edit_trip_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/edit_trip"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_green" />
+
+        <ImageButton
+            android:id="@+id/back_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_trip_title"
+            android:textColorHint="@color/black"
+            android:id="@+id/item_title"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:overScrollMode="always"
+            android:maxLines="1"
+            android:minLines="1"
+            android:gravity="top"
+            android:layout_marginBottom="5dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_trip_description"
+            android:textColorHint="@color/black"
+            android:id="@+id/item_description"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:overScrollMode="always"
+            android:maxLines="2"
+            android:minLines="1"
+            android:gravity="top"
+            android:layout_marginBottom="5dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_trip_location"
+            android:textColorHint="@color/black"
+            android:id="@+id/item_location"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:overScrollMode="always"
+            android:maxLines="1"
+            android:minLines="1"
+            android:gravity="top"
+            android:layout_marginBottom="5dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_location_as_current_location"
+        android:textColor="@color/black"
+        android:id="@+id/location_checkbox"
+        app:buttonTint="@color/gray_green"
+        android:layout_marginBottom="5dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:iconTint="@color/gray_green"
+        android:text="@string/change_image"
+        android:textColor="@color/gray"
+        app:strokeColor="@color/gray_green"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:icon="@drawable/baseline_image_24"
+        app:iconSize="30dp"
+        android:id="@+id/image_btn"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/result_image"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/save_changes"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/gray_green"
+        android:id="@+id/save_btn"/>
+
+</LinearLayout>

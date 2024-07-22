@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:background="@color/white">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:contentDescription="@string/back_btn"
+            app:icon="@drawable/baseline_arrow_forward_ios_24"
+            app:iconSize="20dp"
+            app:iconTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/trip_title"
+            android:gravity="center"
+            android:text="@string/no_trip_title"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/back_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:id="@+id/trip_location_container"
+            app:layout_constraintTop_toBottomOf="@id/trip_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_location_pin_24"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/trip_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/no_location"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/trip_description"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="25sp"
+            android:text="@string/no_trip_description"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/trip_location_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/trip_image"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/trip_description" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ai_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:text="@string/ai"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:icon="@drawable/baseline_star_24"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
+            app:iconSize="20dp"
+            app:iconTint="@color/yellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/trip_image" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
